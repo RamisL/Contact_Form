@@ -77,7 +77,7 @@ Et on renvoie un message si le captcha n'est pas coché
 Recaptcha<br>v1.2.4
 
 laravel/framework<br>v8.40.0
-Pour voir tous les versions dans le package composer dans le terminal
+Pour voir toutes les versions dans le package composer dans le terminal
 ```bash
 composer show
 ```
