@@ -1,6 +1,8 @@
 ## Installation
 
-On installe laravel avec
+On a besoin pour ce projet d'avoir npm et node
+
+Après on installe laravel avec
 ```bash
  composer global require laravel/installer
 ```
