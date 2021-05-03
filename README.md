@@ -81,3 +81,8 @@ Pour voir tous les versions dans le package composer dans le terminal
 ```bash
 composer show
 ```
+Le mail utilisé pour tester est :
+```bash
+mail : testlucasramis@gmail.com
+mdp : 1234$Test
+```
