@@ -4,12 +4,7 @@ On installe laravel avec
 ```bash
  composer global require laravel/installer
 ```
-On crée un nouveau projet laravel
-
-```bash
- laravel new NomDeMonProjet
-```
-Installer les dépendences avec
+Installer les dépendences dans le projet avec
 ```bash
  composer install
 ```
@@ -17,6 +12,13 @@ Lancer notre serveur local
 ```bash
  php artisan serve --port=9000
 ```
+vu qu'on a ajouté les captcha key dans .env, on fait la
+```bash
+ require google/recaptcha '~1.1'
+```
+Qui ajoute de nouveaux packages au composeur.json
+
+## Fonctionnement
 Dans votre porjet, créer un classe ContactController avec
 ```bash
  php artisan make:controller ContactController
@@ -29,10 +31,6 @@ vu qu'on a ajouté les captcha key dans .env, on fait la
 ```bash
  require google/recaptcha '~1.1'
 ```
-Qui ajoute de nouveaux packages au composeur.json
-
-## Fonctionnement
-
 Dans la classe Contact on vérifie le formulaire dans la fonction sendMail
 ```bash
      $details = $request->validate([
