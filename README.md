@@ -15,7 +15,7 @@ Lancer notre serveur local
 
 
 ## Fonctionnement
-Dans votre porjet, créer un classe ContactController avec
+Dans notre porjet, on a créé une classe ContactController avec
 ```bash
  php artisan make:controller ContactController
 ```
@@ -23,7 +23,7 @@ Et une classe ContactMail
 ```bash
  php artisan make:mail ContactMail
 ```
-vu qu'on a ajouté les captcha key dans .env, on fait la
+vu qu'on a ajouté les captcha key dans .env, on fait la commande
 ```bash
  require google/recaptcha '~1.1'
 ```
