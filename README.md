@@ -12,11 +12,7 @@ Lancer notre serveur local
 ```bash
  php artisan serve --port=9000
 ```
-vu qu'on a ajouté les captcha key dans .env, on fait la
-```bash
- require google/recaptcha '~1.1'
-```
-Qui ajoute de nouveaux packages au composeur.json
+
 
 ## Fonctionnement
 Dans votre porjet, créer un classe ContactController avec
@@ -31,6 +27,8 @@ vu qu'on a ajouté les captcha key dans .env, on fait la
 ```bash
  require google/recaptcha '~1.1'
 ```
+Qui ajoute de nouveaux packages au composeur.json
+
 Dans la classe Contact on vérifie le formulaire dans la fonction sendMail
 ```bash
      $details = $request->validate([
